@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作业</title>
+    <style type="text/css">
+        .father{
+            width: 500px;
+            height: 500px;
+        }
+        .left,.right{
+            width: 94px;
+            height: 400px;
+            background-color: blue;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+            width: 94px;
+        }
+        .contain{
+            width: 500px;
+            height: 400px;
+            margin-top: 6px;
+        }
+
+        .contain-child{
+            width: 294px;
+            height: auto;
+            float: left;
+            margin-left: 6px;
+        }
+
+        .contain-top,.contain-bottom{
+            width: 300px;
+            height: 197px;
+        }
+        .contain-top{
+            background-color: #dd4bcf;
+        }
+        .contain-bottom{
+            background-color: chartreuse;
+            margin-top: 6px;
+        }
+        .top,.bottom{
+            width: 500px;
+            height: 50px;
+        }
+        .top{
+            background-color: darkorange;
+        }
+        .bottom{
+            background-color: skyblue;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="top"></div>
+            <div class="contain">
+                <div class="left"></div>
+                        <div class="contain-child">
+                    <div class="contain-top"></div>
+                <div class="contain-bottom"></div>
+            </div>
+        <div class="right"></div>
+    </div>
+    <div class="bottom"></div>
+</div>
+</body>
+</html>
